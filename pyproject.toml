@@ -1,0 +1,25 @@
+[project]
+name = "sgg"
+version = "0.1.0"
+description = "Analyze pathogen nucleotide sequences to identify genotypes and predict pathogenicity"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.0",
+    "plotly>=5.0",
+    "biopython>=1.80",
+]
+
+[project.scripts]
+sgg = "sgg.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sgg*"]
+
+[tool.setuptools.package-data]
+sgg = ["data/**/*"]
