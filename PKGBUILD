@@ -22,7 +22,7 @@ makedepends=(
     'python-setuptools'
 )
 source=("$pkgname-$pkgver.tar.gz::https://github.com/Soupirr/sgg/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('b751e59bdabbce326c947ab07b928b8b8e7c272f75bc05a99bed6a4377d61c76')
 
 build() {
     cd "$pkgname-$pkgver"
