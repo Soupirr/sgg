@@ -111,3 +111,5 @@ runs NCBI Virus header migration on the input first if it isn't already in
 `virus|accession|genotype|host|country|region|year` format.
 
 Every command supports `--help` for the full flag list, and most support `--json` for scripting.
+
+This CLI was ported from the [Streamlit version](https://github.com/Soupirr/soupirr-global-genotyper) with Claude Code.
